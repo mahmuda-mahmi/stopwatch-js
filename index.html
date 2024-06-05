@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="lofi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="place-content-center align-middle h-svh">
+    <div class="like-dislike-container">
+        <div class="mx-auto gap-4 flex flex-col">
+            <div class="grid grid-cols-4 gap-4 mt-6 mb-8 ml-8 text-center">
+                <div class="flex items-end gap-2">
+                    <span id="hour" class="text-6xl font-semibold">00</span>
+                    <span class="text-2xl">Hr</span>
+                </div>
+                <div class="flex items-end gap-2">
+                    <span id="min" class="text-6xl font-semibold">00</span>
+                    <span class="text-2xl">Min</span>
+                </div>
+                <div class="flex items-end gap-2">
+                    <span id="sec" class="text-6xl font-semibold">00</span>
+                    <span class="text-2xl">Sec</span>
+                </div>
+                <div class="flex">
+                    <span id="counter" class="text-6xl font-semibold">00</span>
+                </div>
+
+            </div>
+            <div class="join join-horizontal gap-4 justify-center">
+                <button class="comic-button join-item" id="start">START</button>
+                <button class="comic-button join-item" id="stop">STOP</button>
+                <button class="comic-button join-item" id="reset">RESET</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
